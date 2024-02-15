@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb9c12a8c6c949f7af83a3d238359d0, type: 3}
+  m_Name: vFolders Data
+  m_EditorClassIdentifier: 
+  folderDatasByGuid:
+    keys:
+    - 00000000000000001000000000000000
+    - 131a6b21c8605f84396be9f6751fb6e3
+    - de0d05608206a42af8845c2cfefff32b
+    - acbd38264c6b44d8793f649f090c335f
+    - 5d16d2009bbe6411cb3e1c14d69b840c
+    - 33ac3ca1ab2934515b2304f20d755900
+    - b28bd598f01704a77bdfb0d3be458d75
+    - f7e89353a3ef8a94abc2a02c63773146
+    - 9837c17b88facd643bdedf2de61a5c4d
+    - d696a984cf615d44183c404e25b05ca9
+    - 7334d221ccaa6a641b84592854be2482
+    - 49c6588da6b1adb4e8d8a6b61864c3f0
+    - 918ff8e552b7fcf41abddcec2b91cd49
+    - fce4a9cfd34f7494992a1ca8f1b5d031
+    - 76a3f819a555f7c449b4f74ee127ae27
+    - 539c5c348da11bf408224905d3afedc8
+    - 7c738b2c51397214da475d29f2718c7d
+    - e01586e9b6bbe314d976fbb2e2ae1d70
+    - ef464c57eb721d44fa10af778438ebe8
+    - 5a61a829a89b12644bf7123233afd9a4
+    - d0e6e7986726b4e4687a740a06fe459e
+    - ef5c1d0a638a5a748ab0b8d6e5430009
+    - e162f446462fdd94090da68873f2255a
+    values:
+    - guid: 00000000000000001000000000000000
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: 131a6b21c8605f84396be9f6751fb6e3
+      iColor: 7
+      autoIcon: SceneAsset Icon
+      customIcon: 
+      autoIconDirty: 0
+    - guid: de0d05608206a42af8845c2cfefff32b
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: acbd38264c6b44d8793f649f090c335f
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: 5d16d2009bbe6411cb3e1c14d69b840c
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: 33ac3ca1ab2934515b2304f20d755900
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: b28bd598f01704a77bdfb0d3be458d75
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: f7e89353a3ef8a94abc2a02c63773146
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: 9837c17b88facd643bdedf2de61a5c4d
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: d696a984cf615d44183c404e25b05ca9
+      iColor: 10
+      autoIcon: 
+      customIcon: PrefabModel Icon
+      autoIconDirty: 0
+    - guid: 7334d221ccaa6a641b84592854be2482
+      iColor: 3
+      autoIcon: 
+      customIcon: RawImage Icon
+      autoIconDirty: 0
+    - guid: 49c6588da6b1adb4e8d8a6b61864c3f0
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: 918ff8e552b7fcf41abddcec2b91cd49
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: fce4a9cfd34f7494992a1ca8f1b5d031
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: 76a3f819a555f7c449b4f74ee127ae27
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: 539c5c348da11bf408224905d3afedc8
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: 7c738b2c51397214da475d29f2718c7d
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: e01586e9b6bbe314d976fbb2e2ae1d70
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: ef464c57eb721d44fa10af778438ebe8
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: 5a61a829a89b12644bf7123233afd9a4
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: d0e6e7986726b4e4687a740a06fe459e
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: ef5c1d0a638a5a748ab0b8d6e5430009
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
+    - guid: e162f446462fdd94090da68873f2255a
+      iColor: 0
+      autoIcon: 
+      customIcon: 
+      autoIconDirty: 0
