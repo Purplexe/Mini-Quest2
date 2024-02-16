@@ -13,5 +13,49 @@ MonoBehaviour:
   m_Name: vHierarchy Data
   m_EditorClassIdentifier: 
   sceneDatasByGuid:
-    keys: []
-    values: []
+    keys:
+    - 2cda990e2423bbf4892e6590ba056729
+    - 104b0d14871d44f4881963af94f49350
+    values:
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-2cda990e2423bbf4892e6590ba056729-340530407-0
+        - GlobalObjectId_V1-2-2cda990e2423bbf4892e6590ba056729-2010222612-0
+        - GlobalObjectId_V1-2-2cda990e2423bbf4892e6590ba056729-519420028-0
+        - GlobalObjectId_V1-2-2cda990e2423bbf4892e6590ba056729-788941476-0
+        - GlobalObjectId_V1-2-2cda990e2423bbf4892e6590ba056729-1175369818-0
+        - GlobalObjectId_V1-2-2cda990e2423bbf4892e6590ba056729-1022894191-0
+        values:
+        - iColor: 3
+          icon: CapsuleCollider Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 3
+          icon: Terrain Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: PreMatCube
+      goDatasByInstanceId:
+        keys: aac400002018ffffb6c40000c8c40000920bffffe004ffff
+        values:
+        - iColor: 3
+          icon: CapsuleCollider Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 3
+          icon: Terrain Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: PreMatCube
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []
