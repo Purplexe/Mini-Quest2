@@ -66,7 +66,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Instantiate(fire, transform.position, Quaternion.identity);
-
         }
         //Continuous calling of the flip method. 
         Flip();
