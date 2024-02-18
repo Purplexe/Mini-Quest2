@@ -62,6 +62,7 @@ MonoBehaviour:
     - f741c2ac461d2584f953dc6743032ea3
     - 2d1e315e32594834ebb09a788e4340d4
     - 89bcd926e3df16a449ecba80ad477cf8
+    - 07eb5f4c9923d194aa62881dbad5e3ee
     values:
     - guid: 00000000000000001000000000000000
       iColor: 0
@@ -257,7 +258,7 @@ MonoBehaviour:
       iColor: 8
       autoIcon: cs Script Icon
       customIcon: 
-      autoIconDirty: 1
+      autoIconDirty: 0
     - guid: 744d509a634490a44b30666de265cf89
       iColor: 0
       autoIcon: 
@@ -302,4 +303,9 @@ MonoBehaviour:
       iColor: 0
       autoIcon: 
       customIcon: 
+      autoIconDirty: 0
+    - guid: 07eb5f4c9923d194aa62881dbad5e3ee
+      iColor: 2
+      autoIcon: AudioClip Icon
+      customIcon: AudioSource Icon
       autoIconDirty: 0

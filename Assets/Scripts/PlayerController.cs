@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashingPower = 24f;
     [SerializeField] private float dashingTime = 0.2f;
     [SerializeField] private float dashingCooldown = 1f;
+    [SerializeField] private float bulletSpeed = 5f;
+    [SerializeField] private bool isFiring = false;
     private bool isFacingRight = true;
 
     [Tab("Drag n' Drops!")]
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TrailRenderer tr;
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Animator anim;
+    [SerializeField] private GameObject fire;
 
 
     // Update is called once per frame
@@ -60,6 +63,11 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isJumping", false);
         }
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            Instantiate(fire, transform.position, Quaternion.identity);
+
+        }
         //Continuous calling of the flip method. 
         Flip();
     }
