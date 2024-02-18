@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private TrailRenderer tr;
     [SerializeField] private SpriteRenderer sr;
+    [SerializeField] private Animator anim;
 
 
     // Update is called once per frame
@@ -33,6 +35,7 @@ public class PlayerController : MonoBehaviour
         }
         //Get Axis Raw simply returns a 1 or a 0 instead of a complex float.
         horizontal = Input.GetAxisRaw("Horizontal");
+        anim.SetFloat("isRun", Mathf.Abs(horizontal));
 
         //This code gets the players' ground check object and allows it to jump so long as they are not in the air. 
         if (Input.GetButtonDown("Jump") && IsGrounded())
@@ -47,6 +50,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
+        }
+        if (Math.Abs(rb.velocity.y) > 0 && !IsGrounded())
+        {
+            anim.SetBool("isJumping", true);
+        }
+        else
+        {
+            anim.SetBool("isJumping", false);
         }
 
         //Continuous calling of the flip method. 
@@ -66,6 +77,7 @@ public class PlayerController : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        
     }
     private void Flip()
     {
