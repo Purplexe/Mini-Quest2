@@ -7,7 +7,7 @@ using VInspector;
 public class PlayerController : MonoBehaviour
 {
     [Tab("PlayerThings!")]
-    [SerializeField] private float horizontal;
+    [SerializeField] public float horizontal;
     [SerializeField] private float speed = 8f;
     [SerializeField] private float jumpingPower = 16f;
     [SerializeField] private bool canDash = true;
