@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashingCooldown = 1f;
     [SerializeField] private float bulletSpeed = 5f;
     [SerializeField] private bool isFiring = false;
+    public Vector2 facingDirection = Vector2.right;
     private bool isFacingRight = true;
 
     [Tab("Drag n' Drops!")]
@@ -39,6 +40,16 @@ public class PlayerController : MonoBehaviour
         //Get Axis Raw simply returns a 1 or a 0 instead of a complex float.
         horizontal = Input.GetAxisRaw("Horizontal");
         anim.SetFloat("isRun", Mathf.Abs(horizontal));
+        if (horizontal < 0 && facingDirection == Vector2.right)
+        {
+            FlipX();
+            facingDirection = Vector2.left;
+        }
+        else if (horizontal > 0 && facingDirection == Vector2.left)
+        {
+            FlipX();
+            facingDirection = Vector2.right;
+        }
 
         //This code gets the players' ground check object and allows it to jump so long as they are not in the air. 
         if (Input.GetButtonDown("Jump") && IsGrounded())
@@ -65,10 +76,9 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(fire, transform.position, Quaternion.identity);
+            Instantiate(fire, transform.position, facingDirection == Vector2.left ? Quaternion.Euler(0,180,0): transform.rotation);
         }
-        //Continuous calling of the flip method. 
-        Flip();
+       
     }
 
     private void FixedUpdate()
@@ -86,15 +96,12 @@ public class PlayerController : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
         
     }
-    private void Flip()
+    private void FlipX()
     {
-        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f) 
-        { 
-            isFacingRight = !isFacingRight;
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
-        }
+        
     }
 
     private IEnumerator Dash()
