@@ -13,7 +13,7 @@ public class FiringScript : MonoBehaviour
     void Start()
     {
         
-        Invoke("Die", 2f); //kills off bullet in 2 seconds
+        Invoke("Die", .5f); 
 
     }
 
@@ -28,6 +28,11 @@ public class FiringScript : MonoBehaviour
             Destroy(gameObject);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("enemy"))
+            Destroy(gameObject);
+    }
 
 
 }

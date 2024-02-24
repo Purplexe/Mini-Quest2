@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using VInspector;
 
 public class PlayerController : MonoBehaviour
@@ -18,7 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float bulletSpeed = 5f;
     [SerializeField] private bool isFiring = false;
     public Vector2 facingDirection = Vector2.right;
-    private bool isFacingRight = true;
+    
 
     [Tab("Drag n' Drops!")]
     [SerializeField] private Rigidbody2D rb;
@@ -73,11 +74,12 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("isJumping", false);
         }
-
+        //Shooting
         if (Input.GetMouseButtonDown(0))
         {
             Instantiate(fire, transform.position, facingDirection == Vector2.left ? Quaternion.Euler(0,180,0): transform.rotation);
         }
+         
        
     }
 
@@ -118,5 +120,13 @@ public class PlayerController : MonoBehaviour
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("enemy"))
+            Debug.Log("Oopsie *Farts*");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameManager.instance.lives -= 1;
     }
 }
