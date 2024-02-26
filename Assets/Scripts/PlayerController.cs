@@ -125,8 +125,16 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("enemy"))
-            Debug.Log("Oopsie *Farts*");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            GameManager.instance.lives -= 1;
+        {
+
+            Debug.Log("Oopsie 1");
+            GameRestart();
+        }
+    }
+
+    private void GameRestart()
+    {
+        Debug.Log("Oopsie 2");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
